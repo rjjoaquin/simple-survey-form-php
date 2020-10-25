@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form - RJ Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+ <?php include 'submit-form.php'; ?>
+
+
+</head>
+<div id="body-div">
+    <h1 id="title"> Investor Survey Form </h1>
+    <div id="description-div">
+        <p id="description"> Hello! We would love to get to know you as an investor in order for us to
+            provide you
+            with better investment opportunities. Please fill up the questionnaire below. </p>
+    </div>
+
+    <div id="form-div">
+        <form id="survey-form" method='POST' >
+         
+            <div id="input-not-submit">
+                <label id="name-label"> Your name(Required) </label> 
+                <br>
+                <input type=text name=name id=name minlength=4 maxlength=200 required />
+                <br>
+
+
+
+                <label id="email-label"> Your email(Required) </label> 
+                <br>
+                <input type=email name=email id=email minlength=4 maxlength=200 />
+                <br>
+
+
+                <label id="number-label"> How many years have you been investing?</label>
+                <br>
+                <input type=number name=yearsinvesting id=yearsinvesting max=100 required />
+                <br>
+
+
+                <label id="dropdown-label"> How much have you invested?</label>
+                <br>
+                <input type=number name=investedamount id=investedamount min=0 max=9999999999 />
+                <br>
+
+
+
+                <label id="checkbox-label"> What investments have you
+                    invested in?</label> <br>
+                    <input type=checkbox class=cboption name="investments" value="High Interest Savings Accounts"><label for="High Interest Savings Accounts">High Interest Savings Accounts</label>
+                    <input type=checkbox class=cboption name="investments" value="Mutual Funds"><label for="Mutual Funds">Mutual Funds</label>
+                    <input type=checkbox class=cboption name="investments" value="Bonds"><label for="Bonds">Bonds</label>
+                    <input type=checkbox class=cboption name="investments" value="Stocks"><label for="Stocks">Stocks</label>
+                    <input type=checkbox class=cboption name="investments" value="Real Estate"><label for="Real Estate">Real Estate</label>
+                    <input type=checkbox class=cboption name="investments" value="Alternative Investments"><label for="Alternatives">Alternative Investments</label>
+            </div>
+            <br>
+
+
+
+            <label id="textareadesc">
+                Recount
+                Your
+                First
+                Investment
+                Experience(Optional)
+            </label>
+            <br>
+            <input type=textarea name=investmentstory id=investmentstory maxlength=2500/>
+            <br>
+            <label id="radio-label">
+                Would
+                you
+                like
+                to
+                subscribe
+                to
+                our
+                investment
+                newsletter?
+            </label>
+            <input type=radio class=cboption name="newsletter" value="Yes"><label for="newsletter">Yes</label>
+            <input type=radio class=cboption name="newsletter" value="No"><label for="no">No</label><br>
+
+         
+            <input type='submit' id='submitbtn' value='Submit'>
+            <br>
+
+
+
+    </div>
+
+
+    </form>
+    
+
+</div>
+
+</body>
+<footer>
+Designed By <a id="white-link" href="https://rjwebdeveloper.com">RJ Web Developer</a>
+</footer>
+</html>

@@ -1,0 +1,142 @@
+body {
+  background-image: url("https://farm8.staticflickr.com/7901/33543306398_c9dcbd25b5_k.jpg");
+}
+
+h1 {
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: 48px;
+  text-align: center;
+  color: #d1e8e2;
+}
+
+#form-div {
+  background-color: rgba(44, 53, 49, 0.65);
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#description {
+  color: #1a9799;
+}
+
+label {
+  font-family: "ZCOOL XiaoWei", serif;
+  color: #d1e8e2;
+  font-size: 24px;
+}
+
+#input-not-submit input {
+  font-family: "ZCOOL XiaoWei", serif;
+  color: #d1e8e2;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #d1e8e2;
+}
+
+input:focus {
+  border-bottom: 1px solid #ffcb9a;
+}
+
+select {
+  color: #ffcb9a;
+  background-color: #2c3531;
+}
+
+select:focus {
+  border: #ffcb9a;
+  outline: #ffcb9a;
+}
+
+.checkbox-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  margin-left: 15%;
+  margin-right: 15%;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 991.9px) {
+  .checkbox-flex {
+    display: block;
+  }
+}
+
+.checkbox-flex li {
+  padding: 1.5%;
+}
+
+.dropdownoptions {
+  flex-basis: 200px;
+  color: #d1e8e2;
+  font-family: "ZCOOL XiaoWei", serif;
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  color: #1a9799;
+  text-align: center;
+  font-family: "ZCOOL XiaoWei", serif;
+}
+
+#body-div {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1200px) {
+  #body-div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #checkbox-flex {
+    width: 100%;
+    display: block;
+  }
+
+  .dropdownoptions {
+    flex-basis: 100%;
+  }
+}
+
+#submit-btn {
+  border-color: #ffcb9a !important;
+  background-color: #2c3531;
+  padding: 10px;
+  color: #ffcb9a !important;
+}
+
+.recaptcha-div {
+  margin: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 991.9px) {
+  .recaptcha-div {
+    transform: scale(0.75);
+    width: 100%;
+  }
+}
+
+#white-link {
+  color: white;
+}
+
+.errors {
+  color: red;
+}
+
+.errors li {
+  list-style: none;
+}
