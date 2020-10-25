@@ -1,6 +1,6 @@
 <?php
 // include database connection file
-require_once'dbconfig.php';
+require_once'/dbconfig.php';
 if(isset($_POST['insert']))
 {
 // Posted Values
@@ -32,13 +32,13 @@ if($query)
 {
 // Message for successfull insertion
 echo "<script>alert('Record inserted successfully');</script>";
-echo "<script>window.location.href='form-success.html'</script>";
+echo "<script>window.location.href='/form-success.html'</script>";
 }
 else
 {
 // Message for unsuccessfull insertion
 echo "<script>alert('Something went wrong. Please try again');</script>";
-echo "<script>window.location.href='form-failure.html'</script>";
+echo "<script>window.location.href='/form-failure.html'</script>";
 }
 }
 ?>
