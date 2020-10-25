@@ -1,7 +1,7 @@
 <?php
 // include database connection file
 require_once'dbconfig.php';
-if(isset($_POST['insert']))
+if(isset($_POST['Submit']))
 {
 // Posted Values
 $name=$_POST['name'];
