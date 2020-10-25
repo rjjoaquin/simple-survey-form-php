@@ -28,8 +28,7 @@ $query->bindParam(':date',$date,PDO::PARAM_STR);
 // Query Execution
 $query->execute();
 // Check that the insertion really worked. If the last inserted id is greater than zero, the insertion worked.
-$lastInsertId = $dbh->lastInsertId();
-if($lastInsertId)
+if($query)
 {
 // Message for successfull insertion
 echo "<script>alert('Record inserted successfully');</script>";
