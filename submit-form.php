@@ -33,7 +33,7 @@ if($lastInsertId)
 {
 // Message for successfull insertion
 echo "<script>alert('Record inserted successfully');</script>";
-echo "<script>window.location.href='form-succes.html'</script>";
+echo "<script>window.location.href='form-success.html'</script>";
 }
 else
 {
